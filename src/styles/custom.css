@@ -1,0 +1,328 @@
+.form-control {
+    border: 2px solid #1d1d1d;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 0.85rem;
+    width: 22rem;
+}
+.form-control:focus-within,
+.form-control:hover {
+    border: 2px solid var(--hover);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* To remove autofill input background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/* To remove arrows from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+.text-underline {
+    text-decoration: underline;
+}
+/*Border Radius*/
+.br-0 {
+    border-radius: 0;
+}
+.br-1 {
+    border-radius: 1px;
+}
+.br-2 {
+    border-radius: 2px;
+}
+.br-3 {
+    border-radius: 3px;
+}
+.br-4 {
+    border-radius: 4px;
+}
+.br-5 {
+    border-radius: 5px;
+}
+.br-6 {
+    border-radius: 6px;
+}
+.br-7 {
+    border-radius: 7px;
+}
+.br-8 {
+    border-radius: 8px;
+}
+.br-9 {
+    border-radius: 9px;
+}
+.br-10 {
+    border-radius: 10px;
+}
+.br-11 {
+    border-radius: 8px;
+}
+.br-12 {
+    border-radius: 12px;
+}
+.br-13 {
+    border-radius: 13px;
+}
+.br-14 {
+    border-radius: 14px;
+}
+.br-15 {
+    border-radius: 15px;
+}
+.br-20 {
+    border-radius: 20px;
+}
+/* ***********************************
+*******Button component css********
+*********************************** */
+
+button:focus {
+    outline: none;
+}
+
+.btn {
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+}
+.btn:hover {
+    transform: translateY(-3px);
+}
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-primary-light:hover:not(:disabled),
+.btn-secondary-light:hover:not(:disabled),
+.btn-primary-dark:hover:not(:disabled),
+.btn-secondary-dark:hover:not(:disabled) {
+    background-color: var(--hover);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-green-light:hover:not(:disabled),
+.btn-green-dark:hover:not(:disabled) {
+    background-color: var(--green);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-green-light:disabled,
+.btn-green-dark:disabled {
+    background-color: var(--disabled);
+    color: inherit;
+    opacity: 0.5;
+    border: none;
+    cursor: unset;
+    transform: translateY(0px);
+}
+
+.btn-primary-light:disabled {
+    background-color: gray;
+    color: inherit;
+    opacity: 0.5;
+    border: none;
+    cursor: unset;
+    transform: translateY(0px);
+}
+
+.btn-secondary-light:disabled {
+    background-color: #ffffff;
+    color: inherit;
+    opacity: 0.5;
+    border: 1px solid gray;
+    outline: gray;
+    cursor: unset;
+    transform: translateY(0px);
+}
+
+.btn-primary-dark:disabled {
+    background-color: var(--disabled);
+    color: inherit;
+    opacity: 0.5;
+    border: none;
+    cursor: unset;
+    transform: translateY(0px);
+}
+
+.btn-secondary-dark:disabled {
+    background-color: var(--disabled);
+    color: inherit;
+    opacity: 0.5;
+    border: none;
+    cursor: unset;
+    transform: translateY(0px);
+}
+
+.btn-primary-light,
+.btn-primary-dark {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: var(--primary);
+    outline: none;
+}
+
+.btn-secondary-light {
+    background-color: #ffffff;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    outline: var(--primary);
+}
+
+.btn-secondary-dark {
+    background-color: var(--secondary);
+    color: #ffffff;
+    border: var(--secondary);
+    outline: none;
+}
+
+.btn-green-light,
+.btn-green-dark {
+    background-color: var(--green);
+    color: #ffffff;
+    border: var(--secondary);
+    outline: none;
+}
+
+.btn-sm {
+    width: max-content;
+    height: fit-content;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.btn-md {
+    width: max-content;
+    height: fit-content;
+    padding: 0.9rem 1.2rem 0.9rem 1.1rem;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+}
+
+.btn-lg {
+    width: max-content;
+    height: fit-content;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
+}
+.btn-auto {
+    /* width:100%;
+    height: fit-content; */
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
+}
+.btn-rounded {
+    border-radius: 50px;
+}
+
+/* ***********************************
+*******Typography component css********
+*********************************** */
+
+h1 {
+    font-weight: normal;
+    font-size: 4.2rem !important;
+    line-height: 4.8rem !important;
+    letter-spacing: -0.03em !important;
+}
+h2 {
+    font-weight: normal;
+    font-size: 3.15rem !important;
+    line-height: 3.6rem !important;
+    letter-spacing: -0.03em !important;
+}
+h3 {
+    font-weight: normal;
+    font-size: 2.3rem !important;
+    line-height: 2.6rem !important;
+}
+h4 {
+    font-weight: normal;
+    font-size: 1.7rem !important;
+    line-height: 2 !important;
+}
+h5 {
+    font-weight: normal;
+    font-size: 1.3rem !important;
+    line-height: 1.5rem !important;
+}
+h6 {
+    font-weight: normal;
+    font-size: 0.9rem !important;
+    line-height: 1.1rem !important;
+}
+.text-small {
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 0.6rem;
+    letter-spacing: 0.05em;
+}
+
+/* ***********************************
+*******Input component css********
+*********************************** */
+
+.flex-1 {
+    flex: 1;
+}
+
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    height: 10vh;
+    border-radius: 4px;
+    background: #000;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #ffffff1a;
+}
+
+@media (max-width: 576px) {
+    .custom-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .custom-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}

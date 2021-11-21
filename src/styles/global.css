@@ -1,0 +1,107 @@
+:root {
+    --primary: #5843be;
+    --secondary: #343b40;
+    --green: #0bbd68;
+    --blue: #0085ff;
+    --dark: #293036;
+    --darkblack: #30363c;
+    --disabled: #2d343a;
+    --hover: #6550ca;
+    --white: #ffffff;
+    --cardhover: rgba(255, 255, 255, 0.1);
+    --darkshades: rgba(255, 255, 255, 0.05);
+    --dangerred: #f85454;
+    --gold: #e7ab00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+body {
+    font-size: 0.9rem;
+    font-family: 'DM Sans' !important;
+}
+.container-95 {
+    width: 95%;
+}
+a {
+    color: inherit;
+}
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+.bg-darkblack {
+    background-color: var(--darkblack) !important;
+}
+.bg-darkshades {
+    background-color: var(--darkshades) !important;
+}
+.bg-cardhover {
+    background-color: var(--cardhover) !important;
+}
+.bg-green {
+    background-color: var(--green) !important;
+}
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+.bg-gold {
+    background-color: var(--gold) !important;
+}
+.bg-danger {
+    background-color: var(--dangerred);
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-hover:hover {
+    color: var(--primary) !important;
+    text-decoration: underline !important;
+}
+.color-primary {
+    color: var(--primary);
+}
+.text-danger {
+    color: var(--dangerred);
+}
+.text-green {
+    color: var(--green) !important;
+}
+.text-gold {
+    color: var(--gold) !important;
+}
+.text-blue {
+    color: var(--blue) !important;
+}
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+.card-hover:hover {
+    background: var(--cardhover) !important;
+}
+.hr-dim-light {
+    height: 1px;
+    background: var(--white);
+    opacity: 0.1;
+}
+/**************************
+*****CSS for Chakra*******
+**************************/
+.chakra_btn_menu:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: var(--primary) !important;
+}

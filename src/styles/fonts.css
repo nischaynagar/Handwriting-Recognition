@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+.font-01 {
+    font-size: 0.1rem;
+}
+.font-02 {
+    font-size: 0.2rem;
+}
+.font-03 {
+    font-size: 0.3rem;
+}
+.font-04 {
+    font-size: 0.4rem;
+}
+.font-05 {
+    font-size: 0.5rem;
+}
+.font-06 {
+    font-size: 0.6rem;
+}
+.font-07 {
+    font-size: 0.7rem;
+}
+.font-08 {
+    font-size: 0.8rem !important;
+}
+.font-09 {
+    font-size: 0.9rem;
+}
+.font-10,
+.font1 {
+    font-size: 1rem;
+}
+.font-11 {
+    font-size: 1.1rem;
+}
+.font-12 {
+    font-size: 1.2rem !important;
+}
+.font-13 {
+    font-size: 1.3rem;
+}
+.font-14 {
+    font-size: 1.4rem;
+}
+.font-15 {
+    font-size: 1.5rem !important;
+}
+.font-16 {
+    font-size: 1.6rem;
+}
+.font-17 {
+    font-size: 1.7rem !important;
+}
+.font-18 {
+    font-size: 1.8rem;
+}
+.font-19 {
+    font-size: 1.9rem;
+}
+.font-20,
+.font-2 {
+    font-size: 2rem !important;
+}
+.font-21 {
+    font-size: 2.1rem;
+}
+.font-22 {
+    font-size: 2.2rem;
+}
+.font-23 {
+    font-size: 2.3rem;
+}
+.font-24 {
+    font-size: 2.4rem;
+}
+.font-25 {
+    font-size: 2.5rem;
+}
+.font-26 {
+    font-size: 2.6rem;
+}
+.font-27 {
+    font-size: 2.7rem;
+}
+.font-28 {
+    font-size: 2.8rem !important;
+}
+.font-29 {
+    font-size: 2.9rem;
+}
+.font-30,
+.font-3 {
+    font-size: 3rem;
+}
+.font-31 {
+    font-size: 3.1rem;
+}
+.font-32 {
+    font-size: 3.2rem;
+}
+.font-33 {
+    font-size: 3.3rem;
+}
+.font-34 {
+    font-size: 3.4rem;
+}
+.font-35 {
+    font-size: 3.5rem;
+}
+.font-36 {
+    font-size: 3.6rem;
+}
+.font-37 {
+    font-size: 3.7rem;
+}
+.font-38 {
+    font-size: 3.8rem;
+}
+.font-39 {
+    font-size: 3.9rem;
+}
+.font-40,
+.font-4 {
+    font-size: 4rem;
+}
+.font-41 {
+    font-size: 4.1rem;
+}
+.font-42 {
+    font-size: 4.2rem;
+}
+.font-43 {
+    font-size: 4.3rem;
+}
+.font-44 {
+    font-size: 4.4rem;
+}
+.font-45 {
+    font-size: 4.5rem;
+}
+.font-46 {
+    font-size: 4.6rem;
+}
+.font-47 {
+    font-size: 4.7rem;
+}
+.font-48 {
+    font-size: 4.8rem;
+}
+.font-49 {
+    font-size: 4.9rem;
+}
+.font-50,
+.font-5 {
+    font-size: 5rem;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-normal {
+    font-weight: normal;
+}
+
+.font-resp-1 {
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 576px) {
+    .font-resp-1 {
+        font-size: 0.9rem;
+    }
+}
