@@ -8,22 +8,59 @@ import SendIcon from "@mui/icons-material/Send";
 
 function AlphabetRecognizer() {
   const [loading, setLoading] = React.useState(false);
-  function handleClick() {
-    setLoading(true);
-  }
 
   const [imgURL, setImgURL] = useState(
     "https://cdn.pixabay.com/photo/2017/11/10/05/24/select-2935439_960_720.png"
   );
 
+  const [img64, setImg64] = useState('')
+  const [img64name, setImg64name] = useState('')
+  const [prediction, setPrediction] = useState('?')
+
+
+  function handleClick() {
+    setLoading(true);
+    fetch('/data', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        id: 2,
+        name: img64name,
+        img: img64
+      })
+    })
+      .then(response => response.json())
+      .then(json => {
+        console.log(json)
+        setPrediction(json['Prediction'])
+        setLoading(false)
+    })
+  }
+
+
   const imageHandler = (e) => {
     const reader = new FileReader();
+    const reader1 = new FileReader();
     reader.onload = () => {
       if (reader.readyState === 2) {
         setImgURL(reader.result);
       }
     };
     reader.readAsDataURL(e.target.files[0]);
+    
+
+    reader1.onload = function() {
+      var arrayBuffer = this.result,
+      array = new Uint8Array(arrayBuffer)
+      const encodedString = Buffer.from(array).toString('base64');
+      console.log(encodedString)
+      setImg64(encodedString)
+    }
+    reader1.readAsArrayBuffer(e.target.files[0]);
+    setImg64name(e.target.files[0].name)
   };
   return (
     <div className="py-5 mb-4 d-flex justify-content-center align-items-center flex-column gap-5">
@@ -36,7 +73,7 @@ function AlphabetRecognizer() {
               src={imgURL}
               alt=""
               id="img"
-              style={{ width: 350, objectFit: "cover" }}
+              style={{ width: 350, objectFit: "cover"}}
             />
             <input
               type="file"
@@ -69,7 +106,7 @@ function AlphabetRecognizer() {
         <div>
           <h3>Recognized Alphabet</h3>
           <div className="text-center h-75 d-flex justify-content-center align-items-center font-2">
-            A
+            {prediction}
           </div>
         </div>
       </div>
